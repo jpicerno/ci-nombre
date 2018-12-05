@@ -1,0 +1,20 @@
+{
+ "manifest_version": 2,
+ "name": "Ci-Nombres",
+ "description": "Devuelve el nombre completo dado una cedula de identidad",
+ "version": "1",
+ "author": "Juan M Picerno",
+ "browser_action": {
+   "default_icon": "images/icon.png",
+   "default_title": "Ci-Nombres",
+    "default_popup": "popup.html",
+    "js": [ "libraries/jquery-3.3.1.min.js","popup.js" ]
+ },
+
+
+ "permissions": [
+    "*://*.mec.gub.uy/*"
+  ]
+
+
+}
