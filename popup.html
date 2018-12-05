@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+    <style>
+      button {
+        height: 30px;
+        width: 100%;
+        outline: none;
+        background-color:green;
+      }
+      button:disabled{
+        background-color: gray;
+      }
+      input{
+        margin-top:5px;
+        margin-bottom:5px;
+        width: 205px;
+      }
+      input#name{
+        height:30px;
+        border:none;
+        text-align: center;
+        font-weight: bolder;
+        font-size:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Obtener Nombre</h1>
+      <p>Ingrese la C&eacute;dula y luego presione <b>Obtener Nombre</b></p>
+    </div>
+    <input id="ci" placeholder="Ingrese cedula" />
+    <button id="obtener" disabled="disabled">Obtener Nombre</button>
+    <script type="text/javascript" src="libraries/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <div id="result">
+      <input id="name" placeholder="Nombre" disabled="disabled"/>
+    </div>
+  </body>
+
+</html>
